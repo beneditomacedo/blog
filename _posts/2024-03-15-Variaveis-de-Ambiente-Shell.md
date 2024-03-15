@@ -6,7 +6,11 @@ categories:
 tags:
 - shell 
 ---
-As variáveis de ambiente do shell permitem configurar e/ou controlar a execução de comandos e utilitários. Por convenção, o nome das variáveis de ambiente usam letras maiscúlas. O comando *echo* permite exibir o conteúdo de uma variável de ambiente.
+As variáveis de ambiente do shell permitem configurar e/ou controlar a execução de comandos e utilitários, por exemplo, o servidor node.js pode usar a variável PORT configurada no shell para definir qual a porta TCP/IP será utilizada pelo servidor para atender as requisições dos clientes. 
+
+Por convenção, o nome das variáveis de ambiente usam letras maiscúlas. 
+
+O comando *echo* permite exibir o conteúdo de uma variável de ambiente.
 
 {% highlight bash %}
 # PORT=3000
