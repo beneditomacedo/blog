@@ -6,7 +6,7 @@ categories:
 tags:
 - shell 
 ---
-O shell, o interpretador de comandos dos sistemas Unix-like, permitem a criação de variáveis de ambiente que configuram e/ou controlam a execução de comandos e utilitários. Por convenção, as variáveis de ambiente são criadas em letras maiscúlas. O shell diferencia variáveis em letras maiscúlas e minúsculas. 
+O shell, o interpretador de comandos dos sistemas Unix-like, permite a criação de variáveis de ambiente que configuram e/ou controlam a execução de comandos e utilitários. Por convenção, as variáveis de ambiente são criadas em letras maiscúlas. O shell diferencia variáveis em letras maiscúlas e minúsculas. 
 
 O comando *echo* permite exibir o conteúdo de uma variável de ambiente. **Quando a variável nao existe, o shell não exibe nenhuma mensagem de erro.** Nesse caso, é exibida uma linha em branco, como podemos ver no exemplo abaixo. Logo em seguida, um valor é atribuido à variável PORT, e seu valor é exibido. Adicionalmente, o comando *unset* permite remover uma variável de ambiente. 
 
@@ -76,5 +76,5 @@ As variáveis de ambiente estão disponíveis dentro do processo que executa o *
 
 <br><br>
 <sup> 
-A versão do Linux é LinuxKit 4.9.125 e a do node é 11.2.0
+A versão do Linux é LinuxKit 4.9.125
 </sup>
