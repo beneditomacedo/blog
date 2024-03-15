@@ -6,9 +6,16 @@ categories:
 tags:
 - shell 
 ---
-O shell é o interpretador de comandos do Linux. A criação de variáveis de ambiente do shell configuram e/ou controlam a execução de comandos e utilitários. Por convenção, as variáveis de ambiente são criadas em letras maiscúlas. O shell diferencia variáveis em letras maiscúlas e minúsculas. 
+As variáveis de ambiente do shell permitem configurar e/ou controlar a execução de comandos e utilitários. Por convenção, o nome das variáveis de ambiente usam letras maiscúlas. O comando *echo* permite exibir o conteúdo de uma variável de ambiente.
 
-O comando *echo* permite exibir o conteúdo de uma variável de ambiente. **Quando a variável nao existe, o shell não exibe nenhuma mensagem de erro.** Nesse caso, é exibida uma linha em branco, como podemos ver no exemplo abaixo. Logo em seguida, um valor é atribuido à variável PORT, e seu valor é exibido.
+{% highlight bash %}
+# PORT=3000
+# echo $PORT
+3000
+# 
+{% endhighlight %}
+
+Quando a variável nao existe, o shell não exibe nenhuma mensagem de erro. Nesse caso, é exibida uma linha em branco.
 
 {% highlight bash %}
 # echo $PORT
@@ -17,6 +24,17 @@ O comando *echo* permite exibir o conteúdo de uma variável de ambiente. **Quan
 # echo $PORT
 3000
 # 
+{% endhighlight %}
+
+O shell diferencia variáveis em letras maiscúlas e minúsculas.
+
+{% highlight bash %}
+# PORT=3000
+# echo $PORT
+3000
+# echo $port
+
+#
 {% endhighlight %}
 
 Para remover uma variável do ambiente use o comando *unset*.
