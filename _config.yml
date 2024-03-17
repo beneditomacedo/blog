@@ -20,6 +20,7 @@ twitter_username: beneditomacedo
 github_username: beneditomacedo
 minimal_mistakes_skin: default
 search: true
+site.locale: pt-BR
 
 # Build settings
 markdown: kramdown
