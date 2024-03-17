@@ -22,6 +22,7 @@ Em uma visão expandida, os fundamentos da segurança da informação estão des
 | Autorização            | Quem pode fazer o que? |
 | Confidencialidade      | Quem pode acessar ?    |
 
+Uma outra dimensão é a privacidade
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
 <b id="f1">1</b> - [Grubb, Sam. How Cybersecurity Really Works. No Starch Press, 2021] (https://www.amazon.com/How-Cybersecurity-Really-Works-Hands/dp/1718501285)<br>
