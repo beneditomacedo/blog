@@ -23,6 +23,6 @@ Em uma visão expandida, os fundamentos da segurança da informação estão des
 | Confidencialidade      | Quem pode acessar ?    |
 
 <br>
-<span style="font-size: 0.8em;">Fontes:<br>
+<span style="font-size: 0.6em;">Fontes:<br>
 <b id="f1">1</b> - [Grubb, Sam. How Cybersecurity Really Works. No Starch Press, 2021] (https://www.amazon.com/How-Cybersecurity-Really-Works-Hands/dp/1718501285)<br>
 <b id="f2">2</b> - [Byrne, Dennis. Full Stack Python Security. Manning Publications, 2021. Web. 15 Oct. 2022] (https://www.manning.com/books/full-stack-python-security). </span>
