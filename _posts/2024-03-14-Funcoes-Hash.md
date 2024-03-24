@@ -9,7 +9,7 @@ tags:
 
 Em geral, as funções **hash** mapeiam entradas de qualquer tamanho em saídas de tamanho fixo. Essas funções possuem aplicação em diversas áreas da computação, desde as tabelas **hash**, passando pelo uso interno nas estruturas de dicionários e conjuntos, e terminando na busca de conteúdos semelhantes.
 
-![Funções Hash](/assets/images/hash_function.jpeg)
+![Funções Hash](/blog/assets/images/hash_function.jpeg)
 
 Essas funções são particularmente relevantes na área de segurança da informação, como por exemplo no armazenamento de senhas, onde o hash das senhas são armazenados ao invés das próprias senhas criptografadas; ou em criptografia, onde são utilizadas para assegurar a integridade dos dados, e em mecanismo de assinatura digital. 
 
@@ -42,7 +42,7 @@ A biblioteca **hashlib** nativa do python implementa diversas funções **hash**
 
 A tabela abaixo sumariza as principais funções **hash** <sup id="a1">[1](#f1)</sup>
 
-![Comparação entre Funções Hash](/assets/images/Comparacao_Hash_Functions.png) 
+![Comparação entre Funções Hash](/blog/assets/images/Comparacao_Hash_Functions.png) 
 
 As funções MD5 e SHA-1 não devem ser utilizadas em aplicações de segurança da informação, pois já foi demonstrando que **não são seguras**. 
 
