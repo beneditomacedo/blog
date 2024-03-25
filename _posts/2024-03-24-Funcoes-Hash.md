@@ -11,14 +11,6 @@ Em geral, as funções **hash** mapeiam entradas de qualquer tamanho em saídas 
 
 ![Funções Hash](/blog/assets/images/hash_function.jpeg)
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
 Essas funções são particularmente relevantes na área de segurança da informação, como por exemplo no armazenamento de senhas, onde o hash das senhas são armazenados ao invés das próprias senhas criptografadas; ou em criptografia, onde são utilizadas para assegurar a integridade dos dados e para a assinatura digital. 
 
 Quando utilizadas em segurança da informação, as funções **hash** devem possuir as seguintes características adicionais:
