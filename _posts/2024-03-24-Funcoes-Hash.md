@@ -28,7 +28,24 @@ O comando nativo do python **hash** não foi projetado para ser usado em seguran
 2119057593691967906 
 {% endhighlight %}
 
-A biblioteca **hashlib** nativa do python implementa diversas funções **hash** que atendem as características listadas acima. As funções listadas em **hashlib.algorithms_guaranteed** são as que estão presentes nas diversas plataformas.
+A biblioteca **hashlib** nativa do python implementa diversas funções **hash** que atendem as características listadas acima. 
+
+Como podemos ver abaixo, essa função é determinística, pois as duas execuções do programa ex_hashlib.py gera o mesmo hash. 
+
+% cat ex_hashlib.py 
+import hashlib
+print(hashlib.sha256(b"criptografia").hexdigest())
+%
+%
+% python3 ex_hashlib.py
+d93449f3e5b4bc1fb096a29c2fe7cb71b2694f1436f738741c35950fdb36fbaf
+% python3 ex_hashlib.py
+d93449f3e5b4bc1fb096a29c2fe7cb71b2694f1436f738741c35950fdb36fbaf
+% 
+
+{% endhighlight %}
+
+As funções listadas em **hashlib.algorithms_guaranteed** são as que estão presentes nas diversas plataformas.
 
 {% highlight python %}
 % python3
