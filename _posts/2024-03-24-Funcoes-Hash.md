@@ -51,4 +51,4 @@ A recomendação de uso é SHA-256, pois possui um bom suporte e é considerada 
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
 <b id="f1">1</b> - [Wikipedia SHA-3](https://en.wikipedia.org/wiki/SHA-3)<br>
-<b id="f2">2</b> - [Byrne, Dennis. Full Stack Python Security. Manning Publications, 2021. Web. 15 Oct. 2022](https://www.manning.com/books/full-stack-python-security)
+<b id="f2">2</b> - [Byrne, Dennis. Full Stack Python Security. Manning Publications, 2021. Web. 15 Oct. 2022](https://www.manning.com/books/full-stack-python-security)<span>
