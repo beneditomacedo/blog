@@ -7,7 +7,7 @@ tags:
 - nivel-basico hashing
 ---
 
-Em geral, as funções **hash** mapeiam entradas de qualquer tamanho em saídas de tamanho fixo. Essas funções possuem aplicação em diversas áreas da computação, dentre elas: as tabelas **hash**, implementação de dicionários e conjuntos em linguagem de programação, busca de conteúdos semelhantes.
+As funções **hash** mapeiam entradas de qualquer tamanho em saídas de tamanho fixo. Essas funções possuem aplicação em diversas áreas da computação, dentre elas: as tabelas **hash**, implementação de dicionários e conjuntos em linguagem de programação, busca de conteúdos semelhantes.
 
 ![Funções Hash](/blog/assets/images/hash_function.jpeg)
 
