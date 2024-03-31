@@ -32,6 +32,7 @@ A biblioteca **hashlib** nativa do python implementa diversas funções **hash**
 
 Como podemos ver abaixo, essa função é determinística, pois as duas execuções do programa ex_hashlib.py gera o mesmo hash. 
 
+{% highlight bash %}
 % cat ex_hashlib.py 
 import hashlib
 print(hashlib.sha256(b"criptografia").hexdigest())
@@ -42,7 +43,6 @@ d93449f3e5b4bc1fb096a29c2fe7cb71b2694f1436f738741c35950fdb36fbaf
 % python3 ex_hashlib.py
 d93449f3e5b4bc1fb096a29c2fe7cb71b2694f1436f738741c35950fdb36fbaf
 % 
-
 {% endhighlight %}
 
 As funções listadas em **hashlib.algorithms_guaranteed** são as que estão presentes nas diversas plataformas.
