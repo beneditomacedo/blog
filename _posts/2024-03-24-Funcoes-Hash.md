@@ -7,7 +7,7 @@ tags:
 - nivel-basico hashing
 ---
 
-Em geral, as funções **hash** mapeiam entradas de qualquer tamanho em saídas de tamanho fixo. Essas funções possuem aplicação em diversas áreas da computação, desde as tabelas **hash**, passando pelo uso interno nas estruturas de dicionários e conjuntos, e terminando na busca de conteúdos semelhantes.
+Em geral, as funções **hash** mapeiam entradas de qualquer tamanho em saídas de tamanho fixo. Essas funções possuem aplicação em diversas áreas da computação, dentre elas: as tabelas **hash**, implementação de dicionários e conjuntos em linguagem de programação, busca de conteúdos semelhantes.
 
 ![Funções Hash](/blog/assets/images/hash_function.jpeg)
 
@@ -50,5 +50,5 @@ A recomendação de uso é SHA-256, pois possui um bom suporte e é considerada 
 
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
-<b id="f1">1</b> - [Wikipedia SHA-3](https://en.wikipedia.org/wiki/SHA-3<br>
+<b id="f1">1</b> - [Wikipedia SHA-3](https://en.wikipedia.org/wiki/SHA-3)<br>
 <b id="f2">2</b> - [Byrne, Dennis. Full Stack Python Security. Manning Publications, 2021. Web. 15 Oct. 2022](https://www.manning.com/books/full-stack-python-security)
