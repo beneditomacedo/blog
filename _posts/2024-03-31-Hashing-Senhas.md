@@ -7,9 +7,9 @@ tags:
 - nivel-basico hashing senhas
 ---
 
-Antes da década de 1980, as senhas dos usuários de sistemas operacionais unix-like eram armazenadas no arquivo "/etc/passwd". A partir de 1980, progressivamente as senhas passaram a ser armazenadas em um arquivo "/etc/shadow" com acesso somente ao usuário root. 
+Antes da década de 1980, as senhas dos usuários de sistemas operacionais unix-like eram armazenadas no arquivo */etc/passwd*. A partir de 1980, as senhas passaram a ser armazenadas em um arquivo "/etc/shadow" com acesso somente ao usuário root, acrescentando mais um nível de segurança ao sistema. 
 
-O arquivo **/etc/shadow/** possui diversos campos separados por **:**, como podemos ver no exemplo abaixo: 
+O arquivo */etc/shadow/* possui diversos campos separados por dois pontos(:), como podemos ver no exemplo abaixo: 
 
 {% highlight bash %}
 % sudo cat /etc/shadow
@@ -53,13 +53,13 @@ xyz:$y$j9T$gYl8mI4pdchHBr9tONgBB.$i5iwS5RMqqXO9toz9KZsdJ.WvMEzz.XIhU5knHP0r20:19
 
 **Não é recomendável exibir o contéudo de arquivos contendo o hash de senhas, pois essas informações podem ser utilizadas em ataques.**
 
-Os dois primeiros campos de cada linha são o nome do usuário e o campo contendo as diversas informações sobre o hashing das senhas. Os demais campos estão relacionados a alteração e expiração das senhas. 
+Os dois primeiros campos de cada linha são o nome do usuário e o campo contendo as diversas informações sobre o hashing das senhas. Os demais campos estão relacionados a alteração e expiração das senhas. No arquivo acima temos diversos usuários criados na instalação do sistema, que não permitem o login em uma interface de acesso, com exceção das duas últimas linhas, onde os usuários *abc* e *xyz* possuem as informacões de hash.
 
-O formato do campo de hash depende do algoritmo de hashing de senhas que o sistema operacional e/ou distribuição utiliza. Os algoritmos **blowfish(1993)** e **bcrypt(1999)** foram alguns dos primeiros algoritmos dos sistemas unix-like. Atualmente diversos algoritmos tais como: **yescrypt**, **script**, **pbkdf2**.
+O formato do campo de hash depende do algoritmo de hashing de senhas que o sistema operacional e/ou distribuição utiliza. Os algoritmos *blowfish(1993)* e *bcrypt(1999)* foram alguns dos primeiros algoritmos dos sistemas unix-like. Atualmente diversos algoritmos tais como: *yescrypt*, *script*, *pbkdf2*.
 
-O **yescrypt** é um algoritmo utilizado ALT Linux, Arch Linux, Debian 11+, Fedora 35+, Kali Linux 2021.1+, Ubuntu 22.04+, é uma evolução do scrypt<sup id="a1">[1](#f1)</sup>. Possui grande resistencia a ataques offline quando comparado com os algoritmos **scrypt**<sup id="a2">[2](#f2)</sup>e **Argon2**.
+O *yescrypt* é um algoritmo utilizado ALT Linux, Arch Linux, Debian 11+, Fedora 35+, Kali Linux 2021.1+, Ubuntu 22.04+, é uma evolução do scrypt <sup id="a1">[1](#f1)</sup>. Possui grande resistencia a ataques offline quando comparado com os algoritmos *scrypt* <sup id="a2">[2](#f2)</sup> e *Argon2*.
 
-Na distribuição Debian 6.1.27-1O, o formato do campo hash no arquivo **/etc/shadow** tem 4 componentes: prefixo, opções, salto, hash. Os componentes opções, salto e hash dependem do prefixo. Dependendo do prefixo, os campos opções e salto podem ser vazios. 
+Na distribuição Debian 6.1.27-1O, o formato do campo hash no arquivo */etc/shadow* tem 4 componentes: prefixo, opções, salto, hash. Os componentes opções, salto e hash dependem do prefixo. Dependendo do prefixo, os campos opções e salto podem ser vazios. 
 
 Na tabela abaixo, temos os algoritmos suportados em ordem de resistencia a ataques<sup id="a3">[3](#f3)</sup>.
 
@@ -78,6 +78,8 @@ Na tabela abaixo, temos os algoritmos suportados em ordem de resistencia a ataqu
 | bigcrypt       |      "" |      12 bits     |    1024 bits    |
 | descrypt       |      "" |      12 bits     |      64 bits    |
 | NT             |       3 |         -        |     256 bits    |
+
+No ínicio do campo hashing dos usuários *abc* e *xyz*, podemos notar *\$y\$*, onde o \$ é o separador de campo do hashing e o prefixo *y*, que informa que o algoritmo é o *yescript*. 
 
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
