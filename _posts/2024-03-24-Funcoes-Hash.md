@@ -4,7 +4,8 @@ date:   2024-03-24 13:04:01:01 -0300
 categories: 
 - ciberseguranca
 tags: 
-- nivel-basico hashing
+- nivel-basico 
+- hashing
 ---
 
 As funções **hash** mapeiam entradas de qualquer tamanho em saídas de tamanho fixo. Essas funções possuem aplicação em diversas áreas da computação, dentre elas: as tabelas **hash**, implementação de dicionários e conjuntos em linguagem de programação, busca de conteúdos semelhantes.

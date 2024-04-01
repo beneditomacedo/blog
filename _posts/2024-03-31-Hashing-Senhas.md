@@ -4,7 +4,9 @@ date:   2024-03-31 19:00:00:00 -0300
 categories: 
 - ciberseguranca
 tags: 
-- nivel-basico hashing senhas
+- nivel-basico
+- hashing 
+- senhas
 ---
 
 Antes da década de 1980, as senhas dos usuários de sistemas operacionais unix-like eram armazenadas no arquivo */etc/passwd*. A partir de 1980, as senhas passaram a ser armazenadas em um arquivo */etc/shadow* com acesso somente ao usuário root, acrescentando mais um nível de segurança ao sistema. 
