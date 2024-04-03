@@ -85,7 +85,7 @@ No ínicio do campo hashing dos usuários *abc* e *xyz*, podemos notar *\$y\$*, 
 
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
-<b id="f1">1 - [C. Percival, "The scrypt Password-Based Key Derivation Function," RFC 7914, Internet Engineering Task Force, Aug. 2016.] (https://datatracker.ietf.org/doc/html/rfc7914)</b><br>
+<b id="f1">1 - [C. Percival, The scrypt Password-Based Key Derivation Function, RFC 7914, Internet Engineering Task Force, Aug. 2016.] (https://datatracker.ietf.org/doc/html/rfc7914)</b><br>
 <b id="f2">2 - [yescrypt - scalable KDF and password hashing scheme] (https://www.openwall.com/yescrypt/)</b><br>
-<b id="f3">3 - [crypt, "crypt(5) - Linux man page," Debian, 2024] (https://manpages.debian.org/bookworm/libcrypt-dev/crypt.5.en.html)</b>
+<b id="f3">3 - [crypt(5) - Linux man page, Debian, 2024] (https://manpages.debian.org/bookworm/libcrypt-dev/crypt.5.en.html)</b>
 </span>
