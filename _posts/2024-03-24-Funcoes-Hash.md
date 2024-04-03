@@ -86,5 +86,6 @@ A tabela abaixo sumariza as principais funções hash <sup id="a3">[3](#f3)</sup
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
 <b id="f1">1 - [md5sum - Linux man page, Debian, 2024](https://manpages.debian.org/bookworm/coreutils/md5sum.1.en.html)</b> <br>
-<b id="f2">2 - [Byrne, Dennis. Full Stack Python Security. Manning Publications, 2021. Web. 15 Oct. 2022](https://www.manning.com/books/full-stack-python-security)</b>  
+<b id="f2">2 - [Byrne, Dennis. Full Stack Python Security. Manning Publications, 2021. Web. 15 Oct. 2022](https://www.manning.com/books/full-stack-python-security)</b><br>
+<b id="f3">3 - [Wikipedia SHA-3](https://en.wikipedia.org/wiki/SHA-3)</b>
 <span>
