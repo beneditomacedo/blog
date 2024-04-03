@@ -8,19 +8,42 @@ tags:
 - hashing
 ---
 
-As funções **hash** mapeiam entradas de qualquer tamanho em saídas de tamanho fixo. Essas funções possuem aplicação em diversas áreas da computação, dentre elas: as tabelas **hash**, implementação de dicionários e conjuntos em linguagem de programação, busca de conteúdos semelhantes.
+As funções **hash** mapeiam entradas de qualquer tamanho em saídas de tamanho fixo. São consideradas funções unidirecionais, pois é muito custoso ou impossível fazer a operação inversa. Essas funções possuem aplicação em diversas áreas da computação, dentre elas: tabelas hash, implementação de dicionários e conjuntos em linguagem de programação, busca de conteúdos semelhantes.
 
 ![Funções Hash](/blog/assets/images/hash_function.jpeg)
 
 Essas funções são particularmente relevantes na área de segurança da informação, como por exemplo no armazenamento de senhas, onde o hash das senhas são armazenados ao invés das próprias senhas criptografadas; ou em criptografia, onde são utilizadas para assegurar a integridade dos dados e para a assinatura digital. 
 
-Quando utilizadas em segurança da informação, as funções **hash** devem possuir as seguintes características adicionais:
+O sistema operacional Debian possui comandos para geração de diversos algoritmos hash, conforme tabela abaixo:
+
+| Algoritmo  | Comando   | 
+|------------|-----------|
+| MD5        | md5sum    |   
+| SHA-1      | sha1sum   |   
+| SHA-224    | sha224sum |   
+| SHA-256    | sha256sum |      
+| SHA-384    | sha384sum |  
+| SHA-512    | sha512sum |
+| BLAKE2     | b2sum     |  
+
+Abaixo, temos a geração de hash do MD5 da palavra 'criptografia'. Independentemente do tamanho da palavra, o hash MD5 tem 32 caracteres hexadecimal. Observe que basta a mudança de um único caracter para que o hash gerado seja completamente diferente. Esse é o efeito avalanche, que é uma característica dos algoritmos hash. 
+
+{% highlight bash %}
+% echo 'criptografia' | md5sum
+388d4d2a53263c3f3939985a4feb8e38  -
+$ echo 'criptografiA' | md5sum
+8b9d031dc44d789a22281ec683a26fdb  -
+{% endhighlight %}
+
+O algoritmo MD5, bem como SHA-1, não devem ser utilizadas em aplicações de segurança da informação, pois **não são seguras**, conforme recomendação da seção BUGS da página do manual online comando *md5sum* do Debian. Os algoritmos recomendados para aplicações de segurança são: SHA-2 (nas suas diversas variações sha-224, sha-384 ou sha-512) ou BLAKE2. <sup id="a1">[1](#f1)</sup>
+
+Quando utilizadas em segurança da informação, as funções **hash** devem possuir as seguintes características:
 - unidirecional - a partir da saída é quase impossível identificar a entrada; 
 - determinística - dada uma entrada sempre gera a mesma saída;
 - efeito avalanche - uma pequena alteração na entrada geram muitas alterações na saída;
 - resistencia a colisão - é praticamente impossivel achar duas entradas com a mesma saída.
 
-O comando nativo do python **hash** não foi projetado para ser usado em segurança da informação, como podemos ver nas linhas abaixo, que demonstra que o hash nativo não é determinístico. O valor do hash varia entre as execuções.
+O comando nativo do python **hash** não foi projetado para ser usado em segurança da informação, como podemos ver nas linhas abaixo, que demonstra que o hash nativo não é determinístico. O valor do hash varia entre as execuções. <sup id="a2">[2](#f2)</sup>
 
 {% highlight bash %}
 % python3 -c'print(hash("criptografia"))'
@@ -29,9 +52,7 @@ O comando nativo do python **hash** não foi projetado para ser usado em seguran
 2119057593691967906 
 {% endhighlight %}
 
-A biblioteca **hashlib** nativa do python implementa diversas funções **hash** que atendem as características listadas acima. 
-
-Como podemos ver abaixo, essa função é determinística, pois as duas execuções do programa ex_hashlib.py gera o mesmo hash. 
+A biblioteca **hashlib** nativa do python implementa diversas funções **hash** que atendem as características listadas acima. Como podemos ver abaixo, essa função é determinística, pois as duas execuções do programa ex_hashlib.py gera o mesmo hash. 
 
 {% highlight bash %}
 % cat ex_hashlib.py 
@@ -58,15 +79,12 @@ As funções listadas em **hashlib.algorithms_guaranteed** são as que estão pr
 >>> 
 {% endhighlight %}
 
-A tabela abaixo sumariza as principais funções **hash** <sup id="a1">[1](#f1)</sup>
+A tabela abaixo sumariza as principais funções hash <sup id="a3">[3](#f3)</sup>
 
 ![Comparação entre Funções Hash](/blog/assets/images/Comparacao_Hash_Functions.png) 
 
-As funções MD5 e SHA-1 não devem ser utilizadas em aplicações de segurança da informação, pois já foi demonstrando que **não são seguras**. 
-
-A recomendação de uso é SHA-256, pois possui um bom suporte e é considerada segura. Para aplicações que demandam um nível de segurança mais alto, deve ser usado o SHA3-256. A função BLAKE2 é recomendada para grandes volumes de dados.  <sup id="a2">[2](#f2)</sup>
-
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
-<b id="f1">1</b> - [Wikipedia SHA-3](https://en.wikipedia.org/wiki/SHA-3)<br>
-<b id="f2">2</b> - [Byrne, Dennis. Full Stack Python Security. Manning Publications, 2021. Web. 15 Oct. 2022](https://www.manning.com/books/full-stack-python-security)<span>
+<b id="f1">1</b> - [md5sum, "md5sum - Linux man page," Debian, 2024] (https://manpages.debian.org/bookworm/coreutils/md5sum.1.en.html)<br>
+<b id="f2">2</b> - [Byrne, Dennis. Full Stack Python Security. Manning Publications, 2021. Web. 15 Oct. 2022](https://www.manning.com/books/full-stack-python-security)<br>
+<b id="f3">3</b> - [Wikipedia SHA-3](https://en.wikipedia.org/wiki/SHA-3)<br><span>
