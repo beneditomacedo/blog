@@ -81,7 +81,7 @@ Na tabela abaixo, temos os algoritmos suportados em ordem de resistencia a ataqu
 | descrypt       |      "" |      12 bits     |      64 bits    |
 | NT             |       3 |         -        |     256 bits    |
 
-No ínicio do campo hashing dos usuários *abc* e *xyz*, podemos notar *\$y\$*, onde o \$ é o separador de campo do hashing e o prefixo *y*, que informa que o algoritmo é o *yescript*. 
+No ínicio do campo hashing dos usuários *abc* e *xyz*, podemos notar *\$y\$*, onde o \$ é o separador de campo do hashing e o prefixo *y* indica que o algoritmo é o *yescript*. 
 
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
