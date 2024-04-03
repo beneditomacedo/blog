@@ -59,7 +59,7 @@ Os dois primeiros campos de cada linha são o nome do usuário e as informaçõe
 
 O formato do campo de hash depende do algoritmo de hashing de senhas que o sistema operacional e/ou distribuição utiliza. Os algoritmos *blowfish(1993)* e *bcrypt(1999)* foram alguns dos primeiros algoritmos dos sistemas unix-like. Atualmente diversos algoritmos tais como: *yescrypt*, *script*, *pbkdf2*.
 
-O *yescrypt* é um algoritmo utilizado ALT Linux, Arch Linux, Debian 11+, Fedora 35+, Kali Linux 2021.1+, Ubuntu 22.04+, é uma evolução do scrypt <sup id="a1">[1](#f1)</sup>. Possui grande resistencia a ataques offline quando comparado com os algoritmos *scrypt* <sup id="a2">[2](#f2)</sup> e *Argon2*.
+O *yescrypt* é um algoritmo utilizado nas distribuições ALT Linux, Arch Linux, Debian 11+, Fedora 35+, Kali Linux 2021.1+, Ubuntu 22.04+, é uma evolução do scrypt <sup id="a1">[1](#f1)</sup>. Possui grande resistencia a ataques offline quando comparado com os algoritmos *scrypt* <sup id="a2">[2](#f2)</sup> e *Argon2*.
 
 Na distribuição Debian 6.1.27-1O, o formato do campo hash no arquivo */etc/shadow* tem 4 componentes: prefixo, opções, salto, hash, separados por um sinal de *\$* Os componentes opções, salto e hash dependem do prefixo. Dependendo do prefixo, os campos opções e salto podem ser vazios. 
 
