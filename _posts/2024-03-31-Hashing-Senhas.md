@@ -85,5 +85,5 @@ No ínicio do campo hashing dos usuários *abc* e *xyz*, podemos notar *\$y\$*, 
 
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
-<b id="f1">1 - [md5sum - Linux man page, Debian, 2024](https://manpages.debian.org/bookworm/coreutils/md5sum.1.en.html)</b> <br>
+<b id="f1">1 - [C. Percival, The scrypt Password-Based Key Derivation Function, RFC 7914, Internet Engineering Task Force, Aug. 2016](https://datatracker.ietf.org/doc/html/rfc7914)</b> <br>
 <span>
