@@ -8,7 +8,7 @@ tags:
 - hashing
 ---
 
-As funções **hash** mapeiam entradas de qualquer tamanho em saídas de tamanho fixo. São consideradas funções unidirecionais, pois é muito custoso ou impossível fazer a operação inversa. Essas funções possuem aplicação em diversas áreas da computação, dentre elas: tabelas hash, implementação de dicionários e conjuntos em linguagem de programação, busca de conteúdos semelhantes.
+As funções hash mapeiam entradas de qualquer tamanho em saídas de tamanho fixo. São consideradas funções unidirecionais, pois é muito custoso ou impossível fazer a operação inversa. Essas funções possuem aplicação em diversas áreas da computação, dentre elas: tabelas hash, implementação de dicionários e conjuntos em linguagem de programação, busca de conteúdos semelhantes.
 
 ![Funções Hash](/blog/assets/images/hash_function.jpeg)
 
@@ -85,5 +85,6 @@ A tabela abaixo sumariza as principais funções hash <sup id="a3">[3](#f3)</sup
 
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
-<b id="f1">1 - [md5sum, "md5sum - Linux man page," Debian, 2024](https://manpages.debian.org/bookworm/coreutils/md5sum.1.en.html)</b> 
+<b id="f1">1 - [md5sum - Linux man page, Debian, 2024](https://manpages.debian.org/bookworm/coreutils/md5sum.1.en.html)</b> <br>
+<b id="f2">2 - [Byrne, Dennis. Full Stack Python Security. Manning Publications, 2021. Web. 15 Oct. 2022](https://www.manning.com/books/full-stack-python-security)</b>  
 <span>
