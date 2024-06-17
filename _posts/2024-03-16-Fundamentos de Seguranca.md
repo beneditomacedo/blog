@@ -20,7 +20,7 @@ A tríade tem suas origens no contexto militar governamental na décadas de 1970
 
 Existem diversas propostas para expandir a tríade, como por exemplo na tabela abaixo: <sup id="a3">[3](#f3)</sup>
 
-| Fundamento | Pergunta chave |
+| Princípio | Pergunta chave |
 |---|---|
 | Integridade dos dados  | Os dados mudaram?      |
 | Autenticação           | Quem voce é?           |
@@ -28,7 +28,7 @@ Existem diversas propostas para expandir a tríade, como por exemplo na tabela a
 | Não repúdio            | Quem fez o que?        |
 | Autorização            | Quem pode fazer o que? |
 | Confidencialidade      | Quem pode acessar ?    |
-{: .text-center}
+
 
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
