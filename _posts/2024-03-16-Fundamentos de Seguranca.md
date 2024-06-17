@@ -28,7 +28,7 @@ Existem diversas propostas para expandir a tríade, como por exemplo na tabela a
 | Não repúdio            | Quem fez o que?        |
 | Autorização            | Quem pode fazer o que? |
 | Confidencialidade      | Quem pode acessar ?    |
-
+{: .text-center}
 
 <br>
 <span style="font-size: 0.6em;">Fontes:<br>
