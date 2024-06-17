@@ -18,7 +18,7 @@ A tríade é composta de três princípios: <sup id="a2">[2](#f2)</sup>
 
 A tríade tem suas origens no contexto militar governamental na décadas de 1970 e 1980, quando so computadores ainda eram caros e limitados aos governos e poucas grandes empresas. Além disso, existe enfase muito técnica, sem considerar outros aspectos. Ao longo do tempo, a academia tem proposto diversas extensões e adição de termos à tríade, bem como outros modelos de princípios. No ambiente empresarial moderno, ainda que os princípios originais estejam válidos, existem outros princípios mais importantes, como por exemplo: privacidade, confiança. <sup id="a1">[1](#f1)</sup>
 
-Existem diversas propostas para expandir a tríade, como descritos na tabela abaixo: <sup id="a3">[3](#f3)</sup>
+Existem diversas propostas para expandir a tríade, como por exemplo na tabela abaixo: <sup id="a3">[3](#f3)</sup>
 
 | Fundamento | Pergunta chave |
 |---|---|
